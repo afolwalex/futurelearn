@@ -1,0 +1,399 @@
+/*......<<BASIC STYLING>>..........*/
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+a {
+    color: #de00a5;
+    text-decoration: none;
+}
+a:hover {
+    color: #292995;
+    text-decoration: none;
+}
+
+/*.......<<HEADER>>.............*/
+.image-logo {
+    width: 100px;
+    height: 40px;
+}
+.nav-link {
+    color: #de00a5;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all .5s ease;
+}
+.nav-link:hover {
+    color: #292995;
+}
+.nav-link:active {
+  display: block;
+}
+.btn-custom {
+  background: #de00a5;
+  color: #ffffff;
+}
+.btn-custom:hover {
+    background: #292995;
+}
+.input-group-text {
+  background: #de00a5;
+  color: #ffffff;
+}
+.input-group-text:hover {
+    background: #292995;
+}
+.search {
+  color: #000000;
+}
+
+/*------<<Hamburger Navbar>>------*/
+.navbar-toggler {
+    position: relative;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+.navbar-toggler span {
+    display: block;
+    background-color: #000000;
+    height: 3px;
+    width: 25px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    left: 0;
+    opacity: 1;
+}
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+    transition: -webkit-transform .35s ease-in-out;
+    transition: transform .35s ease-in-out;
+    transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;
+}
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+}
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px;
+    visibility: hidden;
+    background-color: transparent;
+}  
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+}  
+
+/*.........<<CONTAINER TEXT>>................*/
+.join {
+    font-size: .9rem;
+    font-weight: bold;
+}
+.possible {
+    font-size: 2.1rem;
+    font-weight: bolder;
+}
+.unlock {
+    font-size: 1.2rem;
+}
+.money {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.money .cross{
+    text-decoration: line-through;
+}
+.learn-btn {
+   background: transparent;
+   border: 1px solid #de00a5;
+}
+.learn-btn:hover {
+    color: #292995;
+    border: 1px solid #292995;
+}
+.learn-btn2 {
+    background: #de00a5;
+    color: #ffffff;
+}
+.learn-btn2:hover {
+    background: #292995;
+}
+.tc {
+    font-size: .8rem;
+}
+
+/*........<<BACKGROUND & CONTENT WRAP>>.......*/
+.background {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+}
+.content {
+    position: relative;
+    top: 110px;
+}
+
+/*..........<<POPULAR SECTION>>............*/
+.popular {
+    position: absolute;
+}
+.popular-course {
+    background: url(images/pink.jpg);
+}
+.popular-topic {
+    background: url(images/purple.png);
+}
+.my-wrap {
+    padding: 40px 0px 40px 70px;
+}
+.my-wrap h4, .my-wrap p, .my-wrap button{
+    color: #ffffff;
+}
+.my-wrap h4 {
+    font-size: .9rem;
+    font-weight: bold;
+}
+.my-wrap p {
+    font-size: 1.7rem;
+}
+.my-wrap .popular-btn {
+    background: inherit;
+    border: 1px solid #ffffff;
+}
+.popular-btn:hover {
+    background: #292995;
+    border: 1px solid #292995;
+}
+
+/*..........<<EXPLORE SECTION>>.............*/
+.explore {
+    background: #ffffff;
+    padding: 0;
+    position: relative;
+    top: 220px;
+}
+.explore h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.card {
+    background: #fbfbfb;
+}
+.card:hover {
+    background: #e9ecef;
+}
+.cad-txt {
+    font-size: .9rem;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 3px;
+}
+.card-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.btn-card {
+    width: 100%;
+}
+.btn-customized {
+    background: transparent;
+    border: 1px solid #de00a5;
+    color: #de00a5;
+}
+.btn-customized:hover {
+    border: 1px solid #292995;
+    color: #292995;
+}
+
+/*......... <<Browse Section>>.............*/
+.browse {
+    margin-top: 380px;
+}
+.browse h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 5px;
+}
+.first-message p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.browse-box{
+  padding: 80px 20px 40px 20px ;
+  background: url(images/purple.png);
+}
+.browse-box2{
+    padding: 80px 20px 40px 20px ;
+    background: url(images/pink.jpg);
+}
+.browse-box h4 {
+    font-size: .9rem;
+    color: #ffffff;
+}
+.browse-box2 h4 {
+    font-size: .9rem;
+    color: #ffffff;
+}
+
+.first-message {
+   width: 100%;
+}
+
+/*.........<<Learn-with section>>............*/
+.learn-with h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 5px;
+}
+.why h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 5px;
+}
+.why h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.why p{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.categories a {
+    font-size: 1.2rem;
+}
+.latest {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.latest2 {
+    font-weight: 200;
+    font-size: 1rem;
+}
+.subscribe input {
+    width: 400px;
+    height: 40px;
+}
+.subscribe {
+    margin: 0;
+}
+.footer {
+    background: #2e2c3d;
+    margin: 0;
+}
+.footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.footer li {
+    color: #ffffff;
+    font-weight: 500;
+}
+.footer li a {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer li a:hover {
+    text-decoration: underline;
+}
+.footer2 {
+    background: rgba(0, 0, 0, 0.9);
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+.footer2 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.footer2 li {
+    display: inline;
+}
+.footer2 li a {
+    color: #ffffff;
+    font-size: 25px;
+}
+/*..........<<RESPONSIVENESS>>.............*/
+@media (max-width: 576px){
+   .learn-btn, .learn-btn2 {
+       width: 100%;
+   }
+   .content {
+       top: 180px;
+   }
+   .explore {
+     top: 450px;
+   }
+   .row-mobile {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-left: 5px;  
+    margin-right: 5px;
+   }
+   .browse {
+        margin-top: 630px;
+    }
+}
+@media (min-width: 576px){
+    .learn-btn, .learn-btn2 {
+        width: 100%;
+    }
+    .content {
+        top: 180px;
+    }
+    .explore {
+      top: 450px;
+    }
+    .row-mobile {
+     display: flex;
+     flex-wrap: nowrap;
+     overflow-x: auto;
+     overflow-y: hidden;
+     margin-left: 5px;  
+     margin-right: 5px;
+    }
+     .browse {
+         margin-top: 630px;
+     }
+}
+@media (min-width: 768px){
+    .content {
+        top: 250px;
+    }
+}
+@media (min-width: 992px){
+    .content {
+        top: 30px;
+    }
+    .browse {
+        margin-top: 500px;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1200px !important;
+    }
+    .content {
+        top: 110px;
+    }
+    .explore {
+        top: 220px;
+    }
+    .browse {
+        margin-top: 380px;
+    }
+}
+  
+  
